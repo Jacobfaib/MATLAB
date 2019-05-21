@@ -16,6 +16,11 @@ set(fighandle,'Position',[100 100 800 800])
 
 
 % init subplot ax
-for plotiter = 1:10
+for plotiter = 1:N
     axvec(plotiter) = subplot(row,col,plotiter);
 end
+
+% set font size and other params for ax or fig
+figure
+axhandle = gca;
+set(axhandle,'fontsize', 20);
